@@ -304,6 +304,7 @@ if os.path.exists(selected_model_path):
     st.success(f"✅ Loaded {model_choice} model successfully.")
 else:
     st.error(f"❌ Could not find `{selected_model_path}`. Please make sure the file exists.")
+    st.write("📂 Current working directory:", os.getcwd())
  
 # Input grid 
 st.header("🛠️ Feature Inputs") 
