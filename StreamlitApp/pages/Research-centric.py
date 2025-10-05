@@ -289,13 +289,28 @@ def assign_random_all():
 model_choice = st.selectbox("🧠 Select Model", ["CatBoost", "LightGBM"])
 
 # Load selected model
+
+# model = None
+
+# model_paths = {
+#     "CatBoost": "Files/catboost.pkl",
+#     "LightGBM": "Files/lightgbm.pkl"
+# }
+
+# selected_model_path = model_paths.get(model_choice)
+
 model = None
 
+# Get absolute path to the repo root (one level above /pages)
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+
+# Correct, reliable model paths
 model_paths = {
-    "CatBoost": "Files/catboost.pkl",
-    "LightGBM": "Files/lightgbm.pkl"
+    "CatBoost": os.path.join(BASE_DIR, "Files", "catboost.pkl"),
+    "LightGBM": os.path.join(BASE_DIR, "Files", "lightgbm.pkl")
 }
 
+# Pick the selected model
 selected_model_path = model_paths.get(model_choice)
 
 if os.path.exists(selected_model_path):

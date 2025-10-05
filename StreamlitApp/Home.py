@@ -15,6 +15,7 @@ st.set_page_config(
 # -------------------------------
 # Local Background Image (Base64 Method)
 # -------------------------------
+
 bg_image_path = "Files/bgimg.jpg"  # ensure this exists
 
 def get_base64_of_bin_file(bin_file):
