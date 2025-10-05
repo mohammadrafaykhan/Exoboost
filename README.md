@@ -116,6 +116,6 @@ probabilities = model.predict_proba(X_new)
 
 print(f"Prediction: {predictions[0]}")
 print(f"Probabilities (Class 0, Class 1, etc.): {probabilities[0]}")
-
+```
 
 ![ROC-AUC Curve](ROC-AUC.png)
