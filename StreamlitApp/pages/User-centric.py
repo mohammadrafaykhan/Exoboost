@@ -6,7 +6,6 @@ import os
 from PIL import Image
 import base64
 import random
-import google.generativeai as genai
 import requests
 import io
 
