@@ -543,7 +543,7 @@ elif st.session_state.page == 'result':
     
     # st.markdown("### 🎨 Fictional Visual for Your Planet:")
     # st.code(image_prompt, language="text")
-    API_TOKEN = "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"  # <-- Put your API key here
+    API_TOKEN = ""  # <-- Put your API key here
     MODEL_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
     OUTPUT_FILE = "generated_planet.png"
 
