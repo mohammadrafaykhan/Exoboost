@@ -14,8 +14,8 @@ st.set_page_config(page_title="🪐 Exoplanet Explorer", page_icon="🪐", layou
 # -------------------------------
 # Local Background Image (Base64 Method)
 # -------------------------------
-bg_image_path = "Files/bgimg.jpg"  # ensure this exists
-ex_image_path = "Files/extypes.jpg"
+bg_image_path = "bgimg.jpg"  # ensure this exists
+ex_image_path = "extypes.jpg"
 
 def get_base64_of_bin_file(bin_file):
     with open(bin_file, "rb") as f:
