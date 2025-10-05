@@ -293,8 +293,8 @@ model_choice = st.selectbox("🧠 Select Model", ["CatBoost", "LightGBM"])
 model = None
 
 model_paths = {
-    "CatBoost": "Files/catboost.pkl",
-    "LightGBM": "Files/lightgbm.pkl"
+    "CatBoost": "catboost.pkl",
+    "LightGBM": "lightgbm.pkl"
 }
 
 selected_model_path = model_paths.get(model_choice)
